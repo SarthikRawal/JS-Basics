@@ -11,8 +11,14 @@ let name2 = {
 }
 
 // Function borrowing
+
 // CALL
 printFullName.call(name1, "Jodhpur", "Rajasthan")
+
 // APPLY
 printFullName.apply(name2, ["Mumbai", "Maharashtra"])
 
+// BIND
+let printMyName = printFullName.bind(name1, "Jodhpur", "Rajasthan")
+console.log(printMyName);
+printMyName();
