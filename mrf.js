@@ -21,4 +21,5 @@ const reduceFunc = (h1, h2) => {
     return h1 + h2;
 }
 let a3 = arr3.reduce(reduceFunc)
+console.log(arr3);
 console.log(a3);
