@@ -56,3 +56,22 @@ console.log(newArr);
 let obj = { a: 12, b: 15, c: 18 }
 let { a, ...rest } = obj
 console.log(rest);
+
+
+// Challenge 4
+const addCar = function (model, year) {
+    console.log(`${this.name} has ${model} of year ${year}`)
+}
+
+let n1 = {
+    name: "Sarthik"
+}
+let n2 = {
+    name: "Saurabh"
+}
+
+addCar.call(n1, "Kia", 2020)
+
+let newCar = addCar.bind(n2, "Honda", 2024)
+console.log(newCar);
+newCar()
