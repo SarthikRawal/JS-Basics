@@ -75,3 +75,19 @@ addCar.call(n1, "Kia", 2020)
 let newCar = addCar.bind(n2, "Honda", 2024)
 console.log(newCar);
 newCar()
+
+// Challenge 5
+// "asdh23 ncjf06 ncdc90 abc21f" find the summation of numbers present in each word of this string
+
+const givenStr = "asdh23 ncjf06 ncdc90 abc21f";
+const words = givenStr.split(' ');
+console.log(words);
+const result = words.map(word => {
+    const numbers = word.split('')
+        .filter(char => !isNaN(char) && char !== ' ').join('');
+    // console.log(numbers);
+    return parseInt(numbers, 10) || 0;
+})
+    .reduce((acc, num) => acc + num, 0);
+
+console.log(result);
