@@ -1,6 +1,5 @@
 let arr = [4, 6, 2, 8, 1];
 
-
 function insertionSort(arr) {
     for (i = 1; i < arr.length; i++) {
         let key = arr[i];
