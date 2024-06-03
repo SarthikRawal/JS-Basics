@@ -1,5 +1,6 @@
 let arr = [5, 8, 3, 6, 1];
 
+// Swap function
 function swap(arr, j, i) {
     let temp = arr[j];
     arr[j] = arr[i];
