@@ -1,0 +1,14 @@
+Time Complexity:
+The time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input.
+Simply put, the time required by the algorithm to solve given problem is called time complexity  of the algorithm.
+
+Space Complexity:
+The amount of memory required by the algorithm to solve given problem is called space complexity of the algorithm.
+The space complexity of an algorithm quantifies the amount of space taken by an algorithm to run as a function of the length of the input.
+
+- O(1): Constant time - execution time doesn't depend on input size (e.g., accessing an array element by index).
+- O(log n): Logarithmic time - execution time grows logarithmically with input size (e.g., binary search).
+- O(n): Linear time - execution time grows linearly with input size (e.g., iterating through an array).
+- O(n^2): Quadratic time - execution time grows quadratically with input size (e.g., nested loops).
+- O(n^k): Polynomial time - execution time grows proportionally to a higher power of the input size (k).
+- O(exponential): Exponential time - execution time increases very rapidly with input size (e.g., brute-force search algorithms).
